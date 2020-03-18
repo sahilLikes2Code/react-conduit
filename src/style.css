@@ -1,0 +1,1190 @@
+/* common */
+
+.width-1100 {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-y {
+  align-items: center;
+}
+
+.fontAwesomeIcon {
+  padding-right: 10px;
+  font-size: 13px;
+}
+
+.txt-dec-none {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.marg-top-50 {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.btn-color-change {
+  color: #5cb85c
+}
+
+.height-50px {
+  height: 100px;
+}
+
+/* body {
+  height: 100vh;
+} */
+
+/* Header component */
+
+.header {
+  padding: 10px 0;
+}
+
+.header h3 {
+  color: rgb(92, 184, 92);
+  font-family: titillium web, sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  margin-right: 32px;
+  outline-color: rgb(92, 184, 92);
+  outline-style: none;
+  outline-width: 0px;
+  padding-bottom: 4px;
+  padding-top: 0px;
+  text-decoration: rgb(92, 184, 92);
+  text-decoration-color: rgb(92, 184, 92);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  touch-action: manipulation;
+}
+
+.header li {
+  margin-right: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  color: #b2b2b2;
+  display: block;
+  font-family: source sans pro, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  outline-color: rgba(0, 0, 0, 0.6);
+  outline-style: none;
+  outline-width: 0px;
+  padding-bottom: 6.8px;
+  padding-top: 6.8px;
+  text-decoration: rgba(0, 0, 0, 0.6);
+  text-decoration-color: rgba(0, 0, 0, 0.6);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  touch-action: manipulation;
+  transition-delay: 0s;
+  transition-duration: 0.1s;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+
+/* LoggedInHomepage */
+
+.logged-in-homepage .width-75-percent {
+  width: 75%;
+}
+
+.logged-in-homepage .width-25-percent {
+  margin-left: 20px;
+  width: 25%;
+}
+
+.feed-type {
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  background-origin: padding-box;
+  background-position: 0% 0%;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  border-bottom-color: rgb(92, 184, 92);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(92, 184, 92);
+  border-left-style: none;
+  border-left-width: 0px;
+  border-right-color: rgb(92, 184, 92);
+  border-right-style: none;
+  border-right-width: 0px;
+  border-top-color: rgb(92, 184, 92);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: none;
+  border-top-width: 0px;
+  box-sizing: border-box;
+  color: rgb(92, 184, 92);
+  cursor: default;
+  display: block;
+  font-family: source sans pro, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  outline-color: rgb(92, 184, 92);
+  outline-style: none;
+  outline-width: 0px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  text-decoration: rgb(92, 184, 92);
+  text-decoration-color: rgb(92, 184, 92);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  touch-action: manipulation;
+  transition-delay: 0s;
+  transition-duration: 0.1s;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+
+#no-articles {
+  border-top-color: rgba(0, 0, 0, 0.1);
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  color: rgb(55, 58, 60);
+  font-family: source sans pro, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 24px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 24px;
+}
+
+.logged-in-homepage .tags {
+  background-color: #f3f3f3;
+  height: 200px;
+  width: 300px
+}
+
+.tags p {
+  box-sizing: border-box;
+  color: rgb(55, 58, 60);
+  font-family: source sans pro, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 3.2px;
+  margin-top: 0px;
+}
+
+.loggedin-mid-section {
+  margin-top: 30px;
+}
+
+/* HomePage */
+
+.banner {
+  background-color: rgb(92, 184, 92);
+  background-image: none;
+  background-origin: padding-box;
+  background-position: 0% 0%;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 8px -8px inset, rgba(0, 0, 0, 0.3) 0px -8px 8px -8px inset;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  font-family: source sans pro, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 32px;
+}
+
+.banner h1 {
+  color: rgb(255, 255, 255);
+  font-family: titillium web, sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 61.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 8px;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+}
+
+.banner p {
+  color: rgb(255, 255, 255);
+  font-family: source sans pro, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(rgb(72, 85, 99), rgb(41, 50, 60));
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 5px 5px;
+  color: rgb(255, 255, 255);
+  font-family: source sans pro, sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-top: 15px;
+  text-decoration: rgb(255, 255, 255);
+  text-decoration-color: rgb(255, 255, 255);
+  position: fixed;
+}
+
+.footer p {
+  margin-left: 10px;
+}
+
+/* .footer logo {
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-end;
+} */
+
+/* Signup */
+
+.signup {
+  margin: 50px auto 0;
+  width: 546px;
+}
+
+.signup-h1 {
+  box-sizing: border-box;
+  color: rgb(55, 58, 60);
+  font-family: source sans pro, sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 44px;
+  margin-bottom: 8px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.signup p {
+  background-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  color: rgb(61, 139, 61);
+  font-family: source sans pro, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  outline-color: rgb(61, 139, 61);
+  outline-style: none;
+  outline-width: 0px;
+  text-align: center;
+  text-decoration: underline rgb(61, 139, 61);
+  text-decoration-color: rgb(61, 139, 61);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  touch-action: manipulation;
+  text-decoration: none;
+}
+
+.form-input {
+  background-clip: padding-box;
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  border-bottom-color: rgba(0, 0, 0, 0.15);
+  border-bottom-left-radius: 4.8px;
+  border-bottom-right-radius: 4.8px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgba(0, 0, 0, 0.15);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(0, 0, 0, 0.15);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(0, 0, 0, 0.15);
+  border-top-left-radius: 4.8px;
+  border-top-right-radius: 4.8px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  color: rgb(85, 89, 92);
+  display: block;
+  font-family: source sans pro, sans-serif;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-language-override: normal;
+  font-optical-sizing: auto;
+  font-size: 20px;
+  font-size-adjust: none;
+  font-stretch: 100%;
+  font-style: normal;
+  font-variant: normal;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variant-position: normal;
+  font-variation-settings: normal;
+  font-weight: 400;
+  line-height: 25px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  touch-action: manipulation;
+  width: 546px;
+  display: block;
+  margin: 10px auto;
+}
+
+.signup button {
+  background-color: rgb(68, 157, 68);
+  border-bottom-color: rgb(65, 150, 65);
+  border-bottom-left-radius: 4.8px;
+  border-bottom-right-radius: 4.8px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(65, 150, 65);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(65, 150, 65);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(65, 150, 65);
+  border-top-left-radius: 4.8px;
+  border-top-right-radius: 4.8px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: block;
+  float: right;
+  font-family: source sans pro, sans-serif;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-language-override: normal;
+  font-optical-sizing: auto;
+  font-size: 20px;
+  font-size-adjust: none;
+  font-stretch: 100%;
+  font-style: normal;
+  font-variant: normal;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variant-position: normal;
+  font-variation-settings: normal;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  overflow: visible;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  text-align: center;
+  text-decoration: rgb(255, 255, 255);
+  text-decoration-color: rgb(255, 255, 255);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  /* vertical-align: middle; */
+  white-space: nowrap;
+  -moz-appearance: button;
+}
+
+/* New Post */
+
+.new-post form {
+  display: block;
+  margin: 50px auto 0 auto;
+  width: 700px;
+}
+
+.new-post form input:nth-child(1) {
+  background-clip: padding-box;
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  border-bottom-color: rgba(0, 0, 0, 0.15);
+  border-bottom-left-radius: 4.8px;
+  border-bottom-right-radius: 4.8px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgba(0, 0, 0, 0.15);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(0, 0, 0, 0.15);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(0, 0, 0, 0.15);
+  border-top-left-radius: 4.8px;
+  border-top-right-radius: 4.8px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  color: rgb(85, 89, 92);
+  display: block;
+  font-family: source sans pro, sans-serif;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-language-override: normal;
+  font-optical-sizing: auto;
+  font-size: 20px;
+  font-size-adjust: none;
+  font-stretch: 100%;
+  font-style: normal;
+  font-variant: normal;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variant-position: normal;
+  font-variation-settings: normal;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  touch-action: manipulation;
+  width: 700px;
+  margin-bottom: 15px;
+}
+
+.new-post form input:nth-child(2) {
+  background-clip: padding-box;
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  border-bottom-color: rgba(0, 0, 0, 0.15);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgba(0, 0, 0, 0.15);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(0, 0, 0, 0.15);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(0, 0, 0, 0.15);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  color: rgb(85, 89, 92);
+  display: block;
+  font-family: source sans pro, sans-serif;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-language-override: normal;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-size-adjust: none;
+  font-stretch: 100%;
+  font-style: normal;
+  font-variant: normal;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variant-position: normal;
+  font-variation-settings: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  touch-action: manipulation;
+  width: 700px;
+  margin-bottom: 15px;
+}
+
+.new-post form textarea {
+  background-clip: padding-box;
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  border-bottom-color: rgba(0, 0, 0, 0.15);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgba(0, 0, 0, 0.15);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(0, 0, 0, 0.15);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(0, 0, 0, 0.15);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  color: rgb(85, 89, 92);
+  display: block;
+  font-family: source sans pro, sans-serif;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-language-override: normal;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-size-adjust: none;
+  font-stretch: 100%;
+  font-style: normal;
+  font-variant: normal;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variant-position: normal;
+  font-variation-settings: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  overflow: auto;
+  overflow-x: auto;
+  overflow-y: auto;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  resize: vertical;
+  touch-action: manipulation;
+  width: 700px;
+  margin-bottom: 15px;
+}
+
+.new-post form input:nth-child(4) {
+  background-clip: padding-box;
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  border-bottom-color: rgba(0, 0, 0, 0.15);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgba(0, 0, 0, 0.15);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(0, 0, 0, 0.15);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(0, 0, 0, 0.15);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  color: rgb(85, 89, 92);
+  display: block;
+  font-family: source sans pro, sans-serif;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-language-override: normal;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-size-adjust: none;
+  font-stretch: 100%;
+  font-style: normal;
+  font-variant: normal;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variant-position: normal;
+  font-variation-settings: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  overflow: auto;
+  overflow-x: auto;
+  overflow-y: auto;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  resize: vertical;
+  touch-action: manipulation;
+  width: 700px;
+  margin-bottom: 15px;
+}
+
+.new-post button {
+  background-color: rgb(68, 157, 68);
+  border-bottom-color: rgb(65, 150, 65);
+  border-bottom-left-radius: 4.8px;
+  border-bottom-right-radius: 4.8px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(65, 150, 65);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(65, 150, 65);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(65, 150, 65);
+  border-top-left-radius: 4.8px;
+  border-top-right-radius: 4.8px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: block;
+  float: right;
+  font-family: source sans pro, sans-serif;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-language-override: normal;
+  font-optical-sizing: auto;
+  font-size: 20px;
+  font-size-adjust: none;
+  font-stretch: 100%;
+  font-style: normal;
+  font-variant: normal;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variant-position: normal;
+  font-variation-settings: normal;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  overflow: visible;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  text-align: center;
+  text-decoration: rgb(255, 255, 255);
+  text-decoration-color: rgb(255, 255, 255);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  /* vertical-align: middle; */
+  white-space: nowrap;
+  -moz-appearance: button;
+  width: 170px;
+  height: 50px;
+}
+
+/* Settings page */
+
+.settings-page form {
+  display: block;
+  margin: 0 auto 0 auto;
+  width: 700px;
+  position: relative;
+}
+
+.settings-page h1 {
+  box-sizing: border-box;
+  color: rgb(55, 58, 60);
+  font-family: source sans pro, sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 44px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.settings-page form input:nth-child(1) {
+  background-clip: padding-box;
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  border-bottom-color: rgba(0, 0, 0, 0.15);
+  border-bottom-left-radius: 4.8px;
+  border-bottom-right-radius: 4.8px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgba(0, 0, 0, 0.15);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(0, 0, 0, 0.15);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(0, 0, 0, 0.15);
+  border-top-left-radius: 4.8px;
+  border-top-right-radius: 4.8px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  color: rgb(85, 89, 92);
+  display: block;
+  font-family: source sans pro, sans-serif;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-language-override: normal;
+  font-optical-sizing: auto;
+  font-size: 20px;
+  font-size-adjust: none;
+  font-stretch: 100%;
+  font-style: normal;
+  font-variant: normal;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variant-position: normal;
+  font-variation-settings: normal;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  touch-action: manipulation;
+  width: 700px;
+  margin-bottom: 15px;
+}
+
+.settings-page form input:nth-child(2) {
+  background-clip: padding-box;
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  border-bottom-color: rgba(0, 0, 0, 0.15);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgba(0, 0, 0, 0.15);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(0, 0, 0, 0.15);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(0, 0, 0, 0.15);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  color: rgb(85, 89, 92);
+  display: block;
+  font-family: source sans pro, sans-serif;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-language-override: normal;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-size-adjust: none;
+  font-stretch: 100%;
+  font-style: normal;
+  font-variant: normal;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variant-position: normal;
+  font-variation-settings: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  touch-action: manipulation;
+  width: 700px;
+  margin-bottom: 15px;
+}
+
+.settings-page form textarea {
+  background-clip: padding-box;
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  border-bottom-color: rgba(0, 0, 0, 0.15);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgba(0, 0, 0, 0.15);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(0, 0, 0, 0.15);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(0, 0, 0, 0.15);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  color: rgb(85, 89, 92);
+  display: block;
+  font-family: source sans pro, sans-serif;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-language-override: normal;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-size-adjust: none;
+  font-stretch: 100%;
+  font-style: normal;
+  font-variant: normal;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variant-position: normal;
+  font-variation-settings: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  overflow: auto;
+  overflow-x: auto;
+  overflow-y: auto;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  resize: vertical;
+  touch-action: manipulation;
+  width: 700px;
+  margin-bottom: 15px;
+}
+
+.settings-page form input:nth-child(4) {
+  background-clip: padding-box;
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  border-bottom-color: rgba(0, 0, 0, 0.15);
+  border-bottom-left-radius: 4.8px;
+  border-bottom-right-radius: 4.8px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgba(0, 0, 0, 0.15);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(0, 0, 0, 0.15);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(0, 0, 0, 0.15);
+  border-top-left-radius: 4.8px;
+  border-top-right-radius: 4.8px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  color: rgb(85, 89, 92);
+  display: block;
+  font-family: source sans pro, sans-serif;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-language-override: normal;
+  font-optical-sizing: auto;
+  font-size: 20px;
+  font-size-adjust: none;
+  font-stretch: 100%;
+  font-style: normal;
+  font-variant: normal;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variant-position: normal;
+  font-variation-settings: normal;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  touch-action: manipulation;
+  width: 700px;
+}
+
+.settings-page form input:nth-child(5) {
+  background-clip: padding-box;
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  border-bottom-color: rgba(0, 0, 0, 0.15);
+  border-bottom-left-radius: 4.8px;
+  border-bottom-right-radius: 4.8px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgba(0, 0, 0, 0.15);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(0, 0, 0, 0.15);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(0, 0, 0, 0.15);
+  border-top-left-radius: 4.8px;
+  border-top-right-radius: 4.8px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  color: rgb(85, 89, 92);
+  display: block;
+  font-family: source sans pro, sans-serif;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-language-override: normal;
+  font-optical-sizing: auto;
+  font-size: 20px;
+  font-size-adjust: none;
+  font-stretch: 100%;
+  font-style: normal;
+  font-variant: normal;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variant-position: normal;
+  font-variation-settings: normal;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  touch-action: manipulation;
+  width: 700px;
+  margin-bottom: 10px;
+}
+
+.settings-page button {
+  background-color: rgb(68, 157, 68);
+  border-bottom-color: rgb(65, 150, 65);
+  border-bottom-left-radius: 4.8px;
+  border-bottom-right-radius: 4.8px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(65, 150, 65);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(65, 150, 65);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(65, 150, 65);
+  border-top-left-radius: 4.8px;
+  border-top-right-radius: 4.8px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: block;
+  font-family: source sans pro, sans-serif;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-language-override: normal;
+  font-optical-sizing: auto;
+  font-size: 20px;
+  font-size-adjust: none;
+  font-stretch: 100%;
+  font-style: normal;
+  font-variant: normal;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variant-position: normal;
+  font-variation-settings: normal;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  overflow: visible;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  text-align: center;
+  text-decoration: rgb(255, 255, 255);
+  text-decoration-color: rgb(255, 255, 255);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  white-space: nowrap;
+  -moz-appearance: button;
+  height: 50px;
+  width: 184px;
+  position: absolute;
+  right: 0px;
+}

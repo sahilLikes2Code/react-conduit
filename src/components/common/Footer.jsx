@@ -1,0 +1,19 @@
+import React from "react";
+import { IoLogoGithub } from "react-icons/io";
+// import { FaGithub } from "@fortawesome/react-fontawesome";
+
+function Footer() {
+  return (
+    <div className="footer flex-container">
+      <div id="logo">
+        <IoLogoGithub style={{ marginTop: "3px" }} />
+      </div>
+      {/* <FontAwesomeIcon icon={faGithub} style={{ marginRight: "5px" }} /> */}
+      <a href="www.github.com" className="txt-dec-none">
+        <p>Fork on Github</p>
+      </a>
+    </div>
+  );
+}
+
+export default Footer;
