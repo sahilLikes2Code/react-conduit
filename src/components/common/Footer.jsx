@@ -4,15 +4,19 @@ import { IoLogoGithub } from "react-icons/io";
 
 function Footer() {
   return (
-    <div className="footer flex-container">
-      <div id="logo">
-        <IoLogoGithub style={{ marginTop: "3px" }} />
+    <>
+      <div className="height-50px"></div>
+      <div className="footer flex-container">
+        {/* <div className="height-100px"></div> */}
+        <div id="logo">
+          <IoLogoGithub style={{ marginTop: "3px" }} />
+        </div>
+        {/* <FontAwesomeIcon icon={faGithub} style={{ marginRight: "5px" }} /> */}
+        <a href="www.github.com" className="txt-dec-none">
+          <p>Fork on Github</p>
+        </a>
       </div>
-      {/* <FontAwesomeIcon icon={faGithub} style={{ marginRight: "5px" }} /> */}
-      <a href="www.github.com" className="txt-dec-none">
-        <p>Fork on Github</p>
-      </a>
-    </div>
+    </>
   );
 }
 

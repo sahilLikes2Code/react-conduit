@@ -9,6 +9,7 @@ import NewPost from "./article /NewPost.jsx";
 import SettingsPage from "./SettingsPage.jsx";
 import Article from "./article /Article";
 import Tag from "./article /Tag.jsx";
+import Footer from "./common/Footer.jsx";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
       <Route exact path="/settings" component={SettingsPage} />
       <Route exact path="/article/:slug" component={Article} />
       <Route exact path="/tags/:name" component={Tag} />
+
+      <Footer />
     </>
   );
 }

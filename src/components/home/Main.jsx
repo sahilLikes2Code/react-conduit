@@ -68,7 +68,6 @@ class Main extends React.Component {
               })}
           </ul>
         </div>
-        <div className="height-50px"></div>
       </div>
     ) : (
       <Spinner />
