@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../common/Header";
 import Footer from "../common/Footer";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
 function SignInPage(props) {
   let email = React.useRef(null);
@@ -23,13 +23,15 @@ function SignInPage(props) {
       })
     })
       .then(res => res.json())
-      .then(user => {
-        if (user.errors) {
-          localStorage.setItem("isLoggedIn", false);
-          console.log(user, "errrorr");
+      .then(userInfo => {
+        if (userInfo.errors) {
+          // localStorage.setItem("isLoggedIn", false);
+          console.log(userInfo, "errrorr");
         } else {
+          localStorage.setItem("conduit-token", userInfo.user.token);
+          // sessionStorage.setItem("conduit-token", userInfo.user.token);
           props.history.push("/login-home");
-          localStorage.setItem("isLoggedIn", true);
+          props.updateIsLoggedIn(true);
         }
       })
       .catch(err => {
@@ -75,4 +77,4 @@ function SignInPage(props) {
   );
 }
 
-export default SignInPage;
+export default withRouter(SignInPage);
