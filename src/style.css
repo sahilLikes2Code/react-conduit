@@ -1188,3 +1188,84 @@
   position: absolute;
   right: 0px;
 }
+
+/* article-preview-card homepage*/
+
+.article-preview-card img:nth-child(1) {
+  border-bottom-color: rgb(61, 139, 61);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(61, 139, 61);
+  border-left-style: none;
+  border-left-width: 0px;
+  border-right-color: rgb(61, 139, 61);
+  border-right-style: none;
+  border-right-width: 0px;
+  border-top-color: rgb(61, 139, 61);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-top-style: none;
+  border-top-width: 0px;
+  box-sizing: border-box;
+  color: rgb(61, 139, 61);
+  display: inline-block;
+  font-family: source sans pro, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  height: 32px;
+  line-height: 24px;
+  vertical-align: middle;
+  width: 32px;
+}
+
+.article-preview-card p:nth-child(2) {
+  background-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  color: rgb(61, 139, 61);
+  display: block;
+  font-family: source sans pro, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  outline-color: rgb(61, 139, 61);
+  outline-style: none;
+  outline-width: 0px;
+  text-decoration: underline rgb(61, 139, 61);
+  text-decoration-color: rgb(61, 139, 61);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  touch-action: manipulation;
+  text-decoration: none;
+}
+
+.article-preview-card h1:nth-child(3) {
+  box-sizing: border-box;
+  color: rgb(55, 58, 60);
+  font-family: source sans pro, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26.4px;
+  margin-bottom: 3px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+}
+
+.article-preview-card p:nth-child(4) {
+  box-sizing: border-box;
+  color: rgb(153, 153, 153);
+  font-family: source sans pro, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20.8px;
+  margin-bottom: 15px;
+  margin-top: 0px;
+}

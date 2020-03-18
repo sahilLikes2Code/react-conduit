@@ -28,10 +28,8 @@ function SignInPage(props) {
           localStorage.setItem("isLoggedIn", false);
           console.log(user, "errrorr");
         } else {
-          localStorage.setItem("isLoggedIn", true);
-          console.log("called in handlelogin");
-
           props.history.push("/login-home");
+          localStorage.setItem("isLoggedIn", true);
         }
       })
       .catch(err => {

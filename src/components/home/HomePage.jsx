@@ -12,15 +12,18 @@ class HomePage extends React.Component {
     super();
     this.state = {
       articles: null,
-      tag: null
+      tags: null
     };
   }
 
   componentDidMount() {
-    console.log("component");
     fetch("https://conduit.productionready.io/api/articles?limit=10&offset=0")
       .then(response => response.json())
       .then(data => this.setState({ articles: data }));
+
+    fetch("https://conduit.productionready.io/api/tags")
+      .then(res => res.json())
+      .then(data => this.setState({ tags: data }));
   }
 
   render() {
@@ -35,6 +38,7 @@ class HomePage extends React.Component {
           <p>A place to share your knowledge.</p>
         </div>
         <Global articles={this.state.articles && this.state.articles} />
+
         <Footer />
       </>
     );
