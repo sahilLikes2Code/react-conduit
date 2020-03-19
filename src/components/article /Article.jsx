@@ -1,47 +1,45 @@
 import React from "react";
-
-import Header from "../common/Header";
 import Spinner from "../spinner/Spinner";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaHeart } from "react-icons/fa";
 
-class Article extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      articleInfo: null
-    };
-  }
-
-  componentDidMount() {
-    let { slug } = this.props.match.params || "";
-    fetch(`https://conduit.productionready.io/api/articles/${slug}`)
-      .then(res => res.json())
-      .then(({ article }) => {
-        console.log(article);
-        this.setState({ articleInfo: article });
-      });
+class Tags extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
   }
 
   render() {
-    return this.state.articleInfo ? (
-      <>
-        <div className="width-1100">
-          <Header />
-        </div>
-        <h1>{this.state.articleInfo && this.state.articleInfo.title}</h1>
-        <p>
-          <b>{this.state.articleInfo && this.state.articleInfo.body}</b>
-        </p>
-        <h6>{this.state.articleInfo && this.state.articleInfo.createdAt}</h6>
-      </>
+    return this.props.articles ? (
+      this.props.articles.articles.map(article => {
+        return (
+          <>
+            <div className="article-preview-card">
+              <div className="flex-container justify-left p-relative">
+                <img src={article.author.image} className="mr-10" alt="" />
+                <div className="mb-10">
+                  <p>{article.author.username}</p>
+                  <p>{article.createdAt}</p>
+                  <button id="fav-counter">
+                    <FaHeart id="heart" />
+                    {article.favoritesCount}
+                  </button>
+                </div>
+              </div>
+              <h1>{article.title}</h1>
+              <p id="article-desc">{article.description}</p>
+              <Link className="txt-dec-none " to={`/article/${article.slug}`}>
+                <h3 id="read-more">Read More...</h3>
+              </Link>
+            </div>
+          </>
+        );
+      })
     ) : (
-      <div>
-        <div className="width-1100">
-          <Header />
-        </div>
-        <Spinner />
-      </div>
+      <Spinner />
     );
   }
 }
 
-export default Article;
+export default Tags;

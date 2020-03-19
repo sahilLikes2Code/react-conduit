@@ -12,7 +12,11 @@ function Footer() {
           <IoLogoGithub style={{ marginTop: "3px" }} />
         </div>
         {/* <FontAwesomeIcon icon={faGithub} style={{ marginRight: "5px" }} /> */}
-        <a href="www.github.com" className="txt-dec-none">
+        <a
+          href="https://www.github.com"
+          target="blank"
+          className="txt-dec-none"
+        >
           <p>Fork on Github</p>
         </a>
       </div>
