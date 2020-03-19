@@ -13,6 +13,8 @@ class Global extends React.Component {
   render() {
     return this.props.articles ? (
       this.props.articles.articles.map(article => {
+        // console.log(new Date(article.createdAt).toDateString());
+        // console.log("test");
         return (
           <>
             <div className="article-preview-card">
@@ -20,17 +22,21 @@ class Global extends React.Component {
                 <img src={article.author.image} className="mr-10" alt="" />
                 <div className="mb-10">
                   <p>{article.author.username}</p>
-                  <p>{article.createdAt}</p>
+                  <p>{new Date(article.createdAt).toDateString()}</p>
                   <button id="fav-counter">
                     <FaHeart id="heart" />
                     {article.favoritesCount}
                   </button>
                 </div>
               </div>
-              <h1>{article.title}</h1>
-              <p id="article-desc">{article.description}</p>
               <Link className="txt-dec-none " to={`/article/${article.slug}`}>
-                <h3 id="read-more">Read More...</h3>
+                <h1>{article.title}</h1>
+              </Link>
+              <Link className="txt-dec-none " to={`/article/${article.slug}`}>
+                <p id="article-desc">{article.description}</p>
+              </Link>
+              <Link className="txt-dec-none " to={`/article/${article.slug}`}>
+                <p id="read-more">Read More...</p>
               </Link>
             </div>
           </>

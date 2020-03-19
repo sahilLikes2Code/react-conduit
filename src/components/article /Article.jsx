@@ -1,45 +1,38 @@
 import React from "react";
+
+import Header from "../common/Header";
 import Spinner from "../spinner/Spinner";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { FaHeart } from "react-icons/fa";
 
-class Tags extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
+class Article extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      article: null
+    };
+  }
+
+  componentDidMount() {
+    let slug = this.props.match.params.slug;
+    fetch(`https://conduit.productionready.io/api/articles/${slug}`)
+      .then(res => res.json())
+      .then(({ article }) => {
+        this.setState({ article: article });
+      });
   }
 
   render() {
-    return this.props.articles ? (
-      this.props.articles.articles.map(article => {
-        return (
-          <>
-            <div className="article-preview-card">
-              <div className="flex-container justify-left p-relative">
-                <img src={article.author.image} className="mr-10" alt="" />
-                <div className="mb-10">
-                  <p>{article.author.username}</p>
-                  <p>{article.createdAt}</p>
-                  <button id="fav-counter">
-                    <FaHeart id="heart" />
-                    {article.favoritesCount}
-                  </button>
-                </div>
-              </div>
-              <h1>{article.title}</h1>
-              <p id="article-desc">{article.description}</p>
-              <Link className="txt-dec-none " to={`/article/${article.slug}`}>
-                <h3 id="read-more">Read More...</h3>
-              </Link>
-            </div>
-          </>
-        );
-      })
+    console.log(this.state.article);
+    return this.state.article ? (
+      <div>
+        <h1>{this.state.article.title}</h1>
+      </div>
     ) : (
       <Spinner />
     );
   }
 }
 
-export default Tags;
+export default Article;
+
+//

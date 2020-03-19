@@ -40,7 +40,7 @@ class HomePage extends React.Component {
           <h1>conduit</h1>
           <p>A place to share your knowledge.</p>
         </div>
-        <div className="width-1100" className="flex-container">
+        <div className="flex-container space-between width-1100">
           <div>
             <div className="width-70">
               <p id="globl-feed">Global Feed</p>
@@ -48,9 +48,11 @@ class HomePage extends React.Component {
             </div>
           </div>
           <div className="tags" className="flex-container">
-            <div className="width-30 p-tag-container">
-              <p className="popular-tags">Popular Tags</p>
-              <Tags tags={this.state.tags && this.state.tags} />
+            <div className="width-30">
+              <div className="p-tag-container">
+                <p className="popular-tags">Popular Tags</p>
+                <Tags tags={this.state.tags && this.state.tags} />
+              </div>
             </div>
           </div>
         </div>
