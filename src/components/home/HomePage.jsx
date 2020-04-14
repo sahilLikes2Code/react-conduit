@@ -8,29 +8,33 @@ import Main from "./Main";
 import Global from "../common/Global";
 import Tags from "../common/Tags";
 import { Link } from "react-router-dom";
+import {
+  fetchArticlesFunc,
+  fetchArticlesCDM,
+  fetchTagsFunc,
+  fetchTagsCDM,
+} from "../../store/actions";
+import { connect } from "react-redux";
+import { fetchTags } from "../../store/types";
 
 class HomePage extends React.Component {
   constructor() {
     super();
     this.state = {
       articles: null,
-      tags: null
+      tags: null,
     };
   }
 
   componentDidMount() {
-    fetch("https://conduit.productionready.io/api/tags")
-      .then(res => res.json())
-      .then(tagData => this.setState({ tags: tagData }));
+    this.props.dispatch(fetchTagsCDM());
 
-    fetch("https://conduit.productionready.io/api/articles?limit=10&offset=0")
-      .then(response => response.json())
-      .then(data => this.setState({ articles: data }));
+    this.props.dispatch(fetchArticlesCDM());
   }
 
   render() {
-    console.log(this.state.tags);
-    console.log(this.state.articles);
+    console.log(this.props, "home orops");
+    // console.log(this.state.articles);
     return (
       <>
         <div className="width-1100">
@@ -44,14 +48,14 @@ class HomePage extends React.Component {
           <div>
             <div className="width-70">
               <p id="globl-feed">Global Feed</p>
-              <Global articles={this.state.articles && this.state.articles} />
+              <Global articles={this.props.articles && this.props.articles} />
             </div>
           </div>
           <div className="tags" className="flex-container">
             <div className="width-30">
               <div className="p-tag-container">
                 <p className="popular-tags">Popular Tags</p>
-                <Tags tags={this.state.tags && this.state.tags} />
+                <Tags tags={this.props.tags && this.props.tags} />
               </div>
             </div>
           </div>
@@ -61,5 +65,8 @@ class HomePage extends React.Component {
     );
   }
 }
-
-export default HomePage;
+function mapToProps({ articles, tags }) {
+  console.log("in map priops", articles, tags);
+  return { articles, tags };
+}
+export default connect(mapToProps)(HomePage);

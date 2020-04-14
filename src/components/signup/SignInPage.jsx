@@ -13,17 +13,17 @@ function SignInPage(props) {
     fetch("https://conduit.productionready.io/api/users/login", {
       method: "POST",
       headers: {
-        "content-type": "application/json"
+        "content-type": "application/json",
       },
       body: JSON.stringify({
         user: {
           email: email.current.value,
-          password: password.current.value
-        }
-      })
+          password: password.current.value,
+        },
+      }),
     })
-      .then(res => res.json())
-      .then(userInfo => {
+      .then((res) => res.json())
+      .then((userInfo) => {
         if (userInfo.errors) {
           // localStorage.setItem("isLoggedIn", false);
           console.log(userInfo, "errrorr");
@@ -34,7 +34,7 @@ function SignInPage(props) {
           props.updateIsLoggedIn(true);
         }
       })
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
       });
   }
